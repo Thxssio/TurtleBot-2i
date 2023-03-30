@@ -23,11 +23,14 @@
 
 
 
-# Following https://github.com/yujinrobot/kobuki/issues/427
-git clone https://github.com/yujinrobot/yujin_ocs.git
+# Following 
+    https://github.com/yujinrobot/kobuki/issues/427
+
+    git clone https://github.com/yujinrobot/yujin_ocs.git
+
 # Remove all but 'yocs_cmd_vel_mux', 'yocs_controllers', and 'yocs_velocity_smoother'
-mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers yujin_ocs/yocs_velocity_smoother .
-rm -rf yujin_ocs
+    mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers yujin_ocs/yocs_velocity_smoother .
+    rm -rf yujin_ocs
 
 # Add the battery monitor package
 git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
