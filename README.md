@@ -51,7 +51,8 @@
     rm -rf linux_peripheral_interfaces
 
 <p>
-    You need to MANUALLY, for now, apply the changes proposed in https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
+    You need to MANUALLY, for now, apply the changes proposed in
+>    https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
 </p>
 
 <p>
