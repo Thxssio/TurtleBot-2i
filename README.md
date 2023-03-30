@@ -10,7 +10,8 @@ catkin_make
 cd src
 
 # Clone the required repositories
-git clone https://github.com/turtlebot/turtlebot.git
+
+'''git clone https://github.com/turtlebot/turtlebot.git'''
 git clone https://github.com/turtlebot/turtlebot_msgs.git
 git clone https://github.com/turtlebot/turtlebot_apps.git
 git clone https://github.com/turtlebot/turtlebot_simulator
