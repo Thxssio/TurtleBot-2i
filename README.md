@@ -6,7 +6,7 @@
 
 
 # Make the workspace
-''' 
+ 
     mkdir ~/catkin_ws
 cd catkin_ws
 mkdir -p src
