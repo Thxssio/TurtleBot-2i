@@ -1,4 +1,7 @@
-# TurtleBot-2i
+<p align="center"> 
+     TurtleBot-2i
+</p>
+
 installation turtlebot 2i
 
 
