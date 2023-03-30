@@ -1,8 +1,8 @@
-<p align="center"> 
+<h1 align="center"> 
      TurtleBot-2i
-</p>
+</h1>
 
-installation turtlebot 2i
+>  installation turtlebot 2i
 
 
 # Make the workspace
