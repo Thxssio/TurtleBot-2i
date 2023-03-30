@@ -54,7 +54,8 @@
     You need to MANUALLY, for now, apply the changes proposed in
 
 </p>
-> https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
+
+    https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
 <p>
     Clone the MELODIC branch of the kobuki git
 </p>
