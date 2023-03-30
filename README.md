@@ -45,24 +45,25 @@
 # Clone the MELODIC branch of the kobuki git
 
     git clone https://github.com/yujinrobot/kobuki.git
-
-sudo apt install liborocos-kdl-dev -y
-sudo apt install ros-noetic-joy 
-rosdep install --from-paths . --ignore-src -r -y
+#
+    sudo apt install liborocos-kdl-dev -y
+    sudo apt install ros-noetic-joy 
+    rosdep install --from-paths . --ignore-src -r -y
 
 # Build the packages
-cd ..
-catkin_make
+    cd ..
+    catkin_make
 
 # If you have a LDS-01 laser mounted on the robot
-sudo apt install ros-noetic-hls-lfcd-lds-driver -y
+    sudo apt install ros-noetic-hls-lfcd-lds-driver -y
 
 # If you have a 3d sensor
-sudo apt install ros-melodic-openni2-launch -y
-sudo apt install ros-melodic-depthimage-to-laserscan -y
-
-echo source "$HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
-sudo adduser $USER dialout
+    sudo apt install ros-melodic-openni2-launch -y
+    
+    sudo apt install ros-melodic-depthimage-to-laserscan -y
+#
+    echo source "$HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
+    sudo adduser $USER dialout
 
 
 
