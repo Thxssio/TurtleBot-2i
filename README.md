@@ -5,7 +5,9 @@
 >  installation turtlebot 2i
 
 
-# Make the workspace
+<p> 
+    Make the workspace
+</p>
  
     mkdir ~/catkin_ws
     cd catkin_ws
