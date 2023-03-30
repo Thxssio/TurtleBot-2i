@@ -42,7 +42,9 @@
     mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers yujin_ocs/yocs_velocity_smoother .
     rm -rf yujin_ocs
 
-# Add the battery monitor package
+<p>
+    Add the battery monitor package
+</p>
 
     git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
     mv linux_peripheral_interfaces/laptop_battery_monitor ./
