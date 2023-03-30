@@ -35,7 +35,9 @@
 
     git clone https://github.com/yujinrobot/yujin_ocs.git
 
-# Remove all but 'yocs_cmd_vel_mux', 'yocs_controllers', and 'yocs_velocity_smoother'
+<p>
+    Remove all but 'yocs_cmd_vel_mux', 'yocs_controllers', and 'yocs_velocity_smoother'
+</p>
 
     mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers yujin_ocs/yocs_velocity_smoother .
     rm -rf yujin_ocs
