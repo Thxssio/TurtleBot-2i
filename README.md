@@ -29,18 +29,22 @@
     git clone https://github.com/yujinrobot/yujin_ocs.git
 
 # Remove all but 'yocs_cmd_vel_mux', 'yocs_controllers', and 'yocs_velocity_smoother'
+
     mv yujin_ocs/yocs_cmd_vel_mux yujin_ocs/yocs_controllers yujin_ocs/yocs_velocity_smoother .
     rm -rf yujin_ocs
 
 # Add the battery monitor package
-git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
-mv linux_peripheral_interfaces/laptop_battery_monitor ./
-rm -rf linux_peripheral_interfaces
+
+    git clone https://github.com/ros-drivers/linux_peripheral_interfaces.git
+    mv linux_peripheral_interfaces/laptop_battery_monitor ./
+    rm -rf linux_peripheral_interfaces
+
 # You need to MANUALLY, for now, apply the changes proposed in https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
 
 
 # Clone the MELODIC branch of the kobuki git
-git clone https://github.com/yujinrobot/kobuki.git
+
+    git clone https://github.com/yujinrobot/kobuki.git
 
 sudo apt install liborocos-kdl-dev -y
 sudo apt install ros-noetic-joy 
