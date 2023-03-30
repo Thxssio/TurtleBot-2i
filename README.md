@@ -50,10 +50,13 @@
     mv linux_peripheral_interfaces/laptop_battery_monitor ./
     rm -rf linux_peripheral_interfaces
 
-# You need to MANUALLY, for now, apply the changes proposed in https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
+<p>
+    You need to MANUALLY, for now, apply the changes proposed in https://github.com/ros-drivers/linux_peripheral_interfaces/pull/18
+</p>
 
-
-# Clone the MELODIC branch of the kobuki git
+<p>
+    Clone the MELODIC branch of the kobuki git
+</p>
 
     git clone https://github.com/yujinrobot/kobuki.git
 #
@@ -61,14 +64,23 @@
     sudo apt install ros-noetic-joy 
     rosdep install --from-paths . --ignore-src -r -y
 
-# Build the packages
-    cd ..
-    catkin_make
+<p>
+    Build the packages
+</p>
 
-# If you have a LDS-01 laser mounted on the robot
+    cd ..
+
+    catkin_make
+<p>
+    If you have a LDS-01 laser mounted on the robot
+</p>
+
     sudo apt install ros-noetic-hls-lfcd-lds-driver -y
 
-# If you have a 3d sensor
+<p>
+    If you have a 3d sensor
+</p>
+
     sudo apt install ros-melodic-openni2-launch -y
     
     sudo apt install ros-melodic-depthimage-to-laserscan -y
