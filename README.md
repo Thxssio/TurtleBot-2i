@@ -76,19 +76,26 @@
     echo source "$HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
     sudo adduser $USER dialout
 
+<p>
+    
+Setting up the udev rule for creating a /dev/ link to the LIDAR if you have one
+You need to define the file  /etc/udev/rules.d/60-hlds-laser.rules with the following content
 
+   On precise, for some reason, USER and GROUP are getting ignored.
+   So setting mode = 0666 for now.
 
-# Setting up the udev rule for creating a /dev/ link to the LIDAR if you have one
-# You need to define the file  /etc/udev/rules.d/60-hlds-laser.rules with the following content
+</p>
 
-  # On precise, for some reason, USER and GROUP are getting ignored.
-  # So setting mode = 0666 for now.
-  SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0666", GROUP:="dialout", SYMLINK+="LDS01"
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0666", GROUP:="dialout", SYMLINK+="LDS01"
 
-# Followed by 
-sudo udevadm control --reload-rules
-sudo udevadm trigger
+<p>
+    Followed by 
+</p>
 
-# You should then be able to access the device through   /dev/LDS01
+    sudo udevadm control --reload-rules
+    sudo udevadm trigger
 
+<p>
+    You should then be able to access the device through   /dev/LDS01
+</p>
 
